@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartProtect Predict — Request Access</title>
+  <meta name="description" content="SmartProtect Predict delivers AI-powered call volume and staffing predictions for public safety agencies. Access is available by request — contact our sales team.">
+  <meta property="og:title" content="SmartProtect Predict — Request Access">
+  <meta property="og:description" content="AI-powered call volume and staffing predictions for 911 centers, fire, EMS, and police. Access is available by request.">
+  <meta property="og:url" content="https://platform.smartprotectpss.com/">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%20%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230d2847%22/%3E%20%3Cpath%20d%3D%22M4%2020%20C4%2023%207%2025%2011%2025%20C15%2025%2017%2023%2017%2020%20C17%2017%2015%2016%2011%2015%20C7%2014%205%2013%205%2010%20C5%207%208%205%2012%205%20C16%205%2018%207%2018%2010%22%20fill%3D%22none%22%20stroke%3D%22%237a9cb8%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%20%3Crect%20x%3D%2214.5%22%20y%3D%225%22%20width%3D%221.5%22%20height%3D%2222%22%20fill%3D%22%237a9cb8%22%20rx%3D%220.75%22/%3E%20%3Cpath%20d%3D%22M18%2027%20L18%205%20L24%205%20C28%205%2030%208%2030%2012%20C30%2016%2028%2019%2024%2019%20L18%2019%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%20%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0d2847;
+      --navy-600: #2d5a87;
+      --navy-700: #1e4160;
+      --slate: #7a9cb8;
+      --slate-700: #506d85;
+      --bg: #ffffff;
+      --bg-soft: #f4f7fa;
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #d1dfea;
+      --card: #ffffff;
+      --logo-p: #0d2847;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #081a2e;
+        --bg-soft: #0d2847;
+        --text: #f3f4f6;
+        --muted: #b3c9db;
+        --border: #1e4160;
+        --card: #0f2e50;
+        --logo-p: #ffffff;
+        --navy-600: #3d78af;
+        --navy-700: #5a8ebd;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: inherit; }
+    .wrap { width: 100%; max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+    header { border-bottom: 1px solid var(--border); }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 1.125rem; }
+    .brand svg { width: 34px; height: 34px; }
+    .brand span { color: var(--slate-700); font-weight: 600; }
+    @media (prefers-color-scheme: dark) { .brand span { color: var(--slate); } }
+    .nav-link { font-size: .95rem; font-weight: 500; color: var(--muted); text-decoration: none; }
+    .nav-link:hover { color: var(--text); }
+
+    main { flex: 1; }
+    .hero {
+      padding: 88px 0 72px;
+      text-align: center;
+      background: radial-gradient(ellipse at top, var(--bg-soft), var(--bg) 70%);
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--navy-600);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 14px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 3.4rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin: 0 auto 20px;
+      max-width: 780px;
+    }
+    h1 em { font-style: normal; color: var(--navy-600); }
+    .lede { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 0 auto 36px; }
+    .ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 10px;
+      font-weight: 600; font-size: 1rem; text-decoration: none;
+      transition: background .15s, box-shadow .15s, transform .15s;
+    }
+    .btn-primary { background: #2d5a87; color: #fff; box-shadow: 0 6px 18px rgba(13, 40, 71, .25); }
+    .btn-primary:hover { background: #1e4160; transform: translateY(-1px); }
+    .btn-secondary { border: 1px solid var(--border); color: var(--text); background: var(--card); }
+    .btn-secondary:hover { border-color: var(--slate); }
+    .btn:focus-visible { outline: 3px solid var(--slate); outline-offset: 3px; }
+    .email-note { margin-top: 18px; font-size: .92rem; color: var(--muted); }
+    .email-note a { font-weight: 600; color: var(--navy-600); }
+
+    .features { padding: 64px 0 80px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 26px; }
+    .card h2 { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--navy-600); margin: 0 0 6px; }
+    .card h3 { font-size: 1.1rem; margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--muted); font-size: .96rem; }
+
+    footer { border-top: 1px solid var(--border); font-size: .88rem; color: var(--muted); }
+    footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 24px 20px; }
+    footer a { color: var(--muted); }
+
+    @media (max-width: 560px) { .nav-link { display: none; } }
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 60px 0 52px; }
+      .btn { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="https://www.smartprotectpss.com" aria-label="SmartProtect home">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M8 65 C8 75 18 82 30 82 C42 82 50 75 50 65 C50 55 42 52 30 48 C18 44 10 40 10 30 C10 20 20 12 32 12 C44 12 52 20 52 30" fill="none" stroke="#7a9cb8" stroke-width="10" stroke-linecap="round"/>
+          <rect x="47" y="12" width="4" height="76" fill="#7a9cb8" rx="2"/>
+          <path d="M55 82 L55 12 L75 12 C88 12 95 22 95 35 C95 48 88 58 75 58 L55 58" fill="none" stroke="var(--logo-p)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        SmartProtect <span>Predict</span>
+      </a>
+      <a class="nav-link" href="https://www.smartprotectpss.com">smartprotectpss.com &rarr;</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Access by request</div>
+        <h1><em>Predict:</em> Know tomorrow's staffing needs</h1>
+        <p class="lede">
+          AI-powered call volume and staffing predictions for 911 centers, fire departments,
+          ambulance agencies, and police departments. Platform access is now available by request &mdash;
+          contact our sales team to discuss access for your agency.
+        </p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="mailto:sales@smartprotectpss.com?subject=SmartProtect%20Predict%20Access%20Inquiry&amp;body=Hello%20SmartProtect%20team%2C%0A%0AI%27d%20like%20to%20learn%20more%20about%20access%20to%20SmartProtect%20Predict.%0A%0AName%3A%20%0AAgency%3A%20%0ARole%3A%20%0APhone%3A%20%0A%0AThanks%2C%0A">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Contact Sales
+          </a>
+          <a class="btn btn-secondary" href="https://www.smartprotectpss.com">Visit SmartProtect</a>
+        </div>
+        <p class="email-note">Or email us directly at <a href="mailto:sales@smartprotectpss.com">sales@smartprotectpss.com</a></p>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Why SmartProtect">
+      <div class="wrap grid">
+        <div class="card">
+          <h2>Dual-Model AI</h2>
+          <h3>Predictions that match reality</h3>
+          <p>Long-term forecasting enriched with real-time external factors &mdash; weather, local events, and historical patterns.</p>
+        </div>
+        <div class="card">
+          <h2>Built by Veterans</h2>
+          <h3>Created by people who lived the problem</h3>
+          <p>25+ years of public safety experience translated into software that fits how you actually work.</p>
+        </div>
+        <div class="card">
+          <h2>Wellness + Efficiency</h2>
+          <h3>Healthy teams protect communities better</h3>
+          <p>Balance budget goals with sustainable workloads &mdash; cut overtime and reduce burnout while staying ready.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; <span id="yr">2026</span> SmartProtect. All rights reserved.</span>
+      <a href="mailto:sales@smartprotectpss.com">sales@smartprotectpss.com</a>
+    </div>
+  </footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

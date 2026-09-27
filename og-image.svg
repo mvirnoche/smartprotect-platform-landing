@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Shield icon (simplified) -->
+  <g transform="translate(100, 200)">
+    <path d="M60 10 L110 30 L110 90 C110 130 60 160 60 160 C60 160 10 130 10 90 L10 30 Z"
+          fill="none" stroke="white" stroke-width="4"/>
+    <path d="M40 80 L55 95 L85 55" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Text -->
+  <text x="200" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="700" fill="white">
+    SmartProtect Predict
+  </text>
+
+  <text x="200" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="rgba(255,255,255,0.9)">
+    AI-Powered Staffing Predictions
+  </text>
+
+  <text x="200" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="rgba(255,255,255,0.7)">
+    Know tomorrow's staffing needs today
+  </text>
+
+  <!-- Agency types -->
+  <g transform="translate(200, 450)" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="rgba(255,255,255,0.6)">
+    <text x="0" y="0">911 Centers</text>
+    <text x="0" y="30">Fire Departments</text>
+    <text x="180" y="0">Police Departments</text>
+    <text x="180" y="30">EMS/Ambulance</text>
+  </g>
+
+  <!-- Decorative chart bars -->
+  <g transform="translate(850, 180)">
+    <rect x="0" y="100" width="40" height="150" fill="rgba(255,255,255,0.3)" rx="4"/>
+    <rect x="60" y="50" width="40" height="200" fill="rgba(255,255,255,0.4)" rx="4"/>
+    <rect x="120" y="80" width="40" height="170" fill="rgba(255,255,255,0.35)" rx="4"/>
+    <rect x="180" y="30" width="40" height="220" fill="rgba(255,255,255,0.5)" rx="4"/>
+  </g>
+
+  <!-- URL -->
+  <text x="200" y="570" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="rgba(255,255,255,0.5)">
+    platform.smartprotectpss.com
+  </text>
+</svg>
